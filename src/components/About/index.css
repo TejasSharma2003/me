@@ -1,0 +1,71 @@
+@import "animate.css";
+
+.main-section
+{
+    padding:5rem 0;
+    /* opacity: 0; */
+}
+
+.container
+{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.about-contents
+{
+}
+
+.heading
+{
+    padding-bottom:4rem;
+    text-align: center;
+    position: relative;
+}
+.heading h1
+{
+    display: inline-block;
+    font-size:4rem;
+    color:#ff0050
+}
+
+
+.heading h1 span
+{
+    font-size:6rem;
+    /* color:#00f2ea; */
+    color:#ff0050;
+}
+
+.about-img
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro
+{
+    max-width: 50%;
+}
+
+.about-initial-heading
+{
+    margin-bottom:30px;
+    color:#00f2ea;
+}
+
+.text-margin{
+    margin:10px 0;
+}
+
+.my-img
+{
+    max-width: 240px;
+    margin-right: 2rem;
+}
+.my-img img
+{
+    width: 100%;
+}
+

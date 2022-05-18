@@ -1,0 +1,139 @@
+
+.form
+{
+    margin-top:2rem;
+}
+
+
+.box-name-email
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-contact
+{
+    position: relative;
+    padding: 14px;
+    background:#2b2b2b;
+    border:none;
+    color:#8d8d8d;
+
+    width: 100%;
+    font-size:1rem;
+}
+.field
+{
+    position: relative;
+    width: 49%;
+}
+
+.position-rel
+{
+    position: relative;
+}
+
+.input-name,
+.input-email
+{
+    width: 100%;
+
+}
+.text
+{
+    max-width: 50%;
+    margin-top:5rem;
+}
+
+.form-map
+{
+    display:flex;
+
+}
+
+
+.input-contact:focus
+{
+    outline: none;
+}
+
+.input-subject
+{
+    width: 100%;
+}
+
+.input-textarea
+{
+    resize: vertical;
+    
+}
+
+.map
+{
+    position: absolute;
+    left: 55%;
+}
+
+.beautifull-effect::after
+{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    background-color: #00f2ea;
+    width: 0%;
+    height: 1px;
+    left:0;
+    transition: width 0.5s ease;
+    bottom:-1px;
+}
+
+.beautifull-effect-active::after
+{
+    width: 100%;
+    
+}
+
+.mar-down
+{
+    margin-bottom:9px ;
+}
+
+
+.info
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.8);
+    max-width: 250px;
+    top:5%;
+    left:5%;
+    padding:1rem;
+    /* text-align: center; */
+}
+.info p
+{
+    font-size: 1rem;
+}
+.email-link
+{
+    font-size:13px;
+    color:#fff;
+    /* font-weight: 500; */
+
+}
+
+.send-email
+{
+    padding:0 !important;
+    cursor: pointer;
+    float: right;
+
+}
+.send-email button
+{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background:transparent;
+    border:none;
+    font-size: 1.1rem;
+    
+}

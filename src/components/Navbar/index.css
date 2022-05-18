@@ -1,0 +1,148 @@
+@import "animate.css";
+
+#navbar
+{
+    width: 100%;
+    padding: 3rem 0;
+    position: absolute  
+}
+
+.navbar-container
+{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.fadeIn
+{
+    display: block;
+    animation:fadeIn;
+    animation-duration: 2s
+
+}
+
+.navbar-contents
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    position:relative;
+}
+
+.logo-svg
+{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+    left:-53px;
+    animation: rotateIn 1s cubic-bezier(0.09, 0.2, 0.07, 0.59) both;
+}
+
+.animate-letters
+{
+    display: inline-block;
+    font-size:1.9rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    transition:color 0.4s ease;
+    /* overflow: hidden; */
+}
+.animate-letters:hover
+{
+    color:#00f2ea;
+    animation: rubberBand 0.5s;
+
+}
+
+.nav-links
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links li
+{
+    margin:0 20px;
+
+
+}
+.nav-link
+{
+    position: relative;
+    transition:color 0.4s ease;
+}
+
+.nav-link::before
+{
+    content: '';
+    width: 100%;
+    min-height: 1px;
+    background-color: #00f2ea;
+    position: absolute;
+    transform:scale(0);
+    transition:transform 0.4s ease;
+    bottom:-5px;
+}
+
+.nav-link:hover::before
+{
+    transform: scale(1);
+
+}
+.nav-link:hover
+{
+    color: #00f2ea !important;;
+}
+
+.contact
+{
+    padding:0.3rem 1rem;
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    outline:1px solid #00f2ea; 
+    overflow: hidden; 
+    cursor: pointer;
+    max-width: 160px;
+}
+.contact::before
+{
+    content:'';
+    position:absolute;
+    width:0%;
+    left:-10%;
+    top:0;
+    height: 100%;
+    background-color:#00f2ea;
+    transform: skewX(25deg);
+    transition:all 0.3s ease;
+    z-index: -10;
+
+}
+.contact:hover::before
+{
+    width:120%;
+}
+.contact:hover .contact-btn
+{
+    color:#000;
+}
+
+.contact-btn
+{
+    color:#00f2ea;
+    letter-spacing: 2px;
+    transition:all 0.3s ease;
+    white-space: nowrap;
+}
+
+
