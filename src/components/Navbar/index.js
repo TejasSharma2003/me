@@ -1,5 +1,5 @@
 import "./index.css";
-import "./mobile.css"
+import "./MobileNav/mobile.css"
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import AnimatedWords from "../AnimatedWords";
@@ -34,12 +34,12 @@ function Navbar() {
             <AnimatedWords letters={letters} letterClass={letterClass} />
           </div>
 
-          {/* <div className="mobile-nav">
-            <MobileNav/>
+          <div className="mobile-nav">
+             <MobileNav hamburgerClick={hamburgerClick} setHamburgerClick={setHamburgerClick}/>
             <div className={`hamburger-menu ${hamburgerClick && 'hamburger-menu--active'}`} onClick={()=>{setHamburgerClick(!hamburgerClick)}}  >
               <div className={`main-stick ${hamburgerClick && 'main-stick--active'}`}></div>
             </div>
-          </div> */}
+          </div>
 
 
           <div className="navigation">

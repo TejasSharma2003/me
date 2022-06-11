@@ -1,11 +1,11 @@
 import "./App.css";
-import "./mediaqueries.css"
 import Home from "./components/Home";
 import About from "./components/About";
 import AOS from "aos";
 import { useEffect } from "react";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import "./mediaqueries.css"
 function App() {
   useEffect(() => {
     window.addEventListener("load", () => {

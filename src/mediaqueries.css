@@ -9,8 +9,21 @@
   .navigation {
     display: none;
   }
+  .mobile-nav {
+    display: block !important;
+  }
   .nav-contact {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .about-img {
+    flex-direction: column-reverse;
+  }
+  .intro {
+    max-width: 100%;
+    padding-top: 4rem
   }
 }
 

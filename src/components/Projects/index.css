@@ -39,8 +39,9 @@
     background-color: #2b2b2c9d;
     padding:14px;
     transform:translateY(110%);
-    transition : transform 0.6s cubic-bezier(0, 1.19, 0.47, 1.13);
+    transition : transform 0.6s cubic-bezier(0.46, 0.07, 0, 1.05);
     width: 100%;
+    
 }
 
 .show-description
