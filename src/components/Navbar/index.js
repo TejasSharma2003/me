@@ -1,9 +1,13 @@
 import "./index.css";
+import "./mobile.css"
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import AnimatedWords from "../AnimatedWords";
+import MobileNav from "./MobileNav";
+
 function Navbar() {
-  const letters={}= ["E", "J", "A", "S"];
+  const [hamburgerClick,setHamburgerClick]=useState(false);
+  const letters = ({} = ["E", "J", "A", "S"]);
   const [letterClass, setLetterClass] = useState("animate-letters");
   return (
     <nav className="fadeIn" id="navbar">
@@ -15,7 +19,7 @@ function Navbar() {
               id="Component_1_1"
               data-name="Component 1 – 1"
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
+              width="60"
               height="60"
               viewBox="0 0 229.883 255.775"
             >
@@ -27,11 +31,17 @@ function Navbar() {
                 fill="#ff0050"
               />
             </svg>
-            <AnimatedWords
-              letters={letters}
-              letterClass={letterClass}
-            />
+            <AnimatedWords letters={letters} letterClass={letterClass} />
           </div>
+
+          {/* <div className="mobile-nav">
+            <MobileNav/>
+            <div className={`hamburger-menu ${hamburgerClick && 'hamburger-menu--active'}`} onClick={()=>{setHamburgerClick(!hamburgerClick)}}  >
+              <div className={`main-stick ${hamburgerClick && 'main-stick--active'}`}></div>
+            </div>
+          </div> */}
+
+
           <div className="navigation">
             <ul className="nav-links">
               <li>
@@ -52,7 +62,7 @@ function Navbar() {
                   duration={500}
                 >
                   Projects
-                </Link>{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -62,7 +72,7 @@ function Navbar() {
                   duration={500}
                 >
                   Skills
-                </Link>{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -72,12 +82,17 @@ function Navbar() {
                   duration={500}
                 >
                   Contact
-                </Link>{" "}
+                </Link>
               </li>
             </ul>
           </div>
-          <div className="contact">
-            <Link to="contact" className="contact-btn">
+          <div className="contact nav-contact">
+            <Link
+              to="contact"
+              className="contact-btn"
+              smooth={true}
+              duration={500}
+            >
               Let's talk!
             </Link>
           </div>

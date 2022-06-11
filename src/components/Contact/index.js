@@ -100,7 +100,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="main-section" data-aos="fade-up">
+    <div id="contact" className="main-section section-contact" data-aos="fade-up">
       <div className="container">
         <div className="contact-me-contents">
           <SectionHead value="Contact" />

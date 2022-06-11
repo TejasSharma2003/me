@@ -1,0 +1,29 @@
+@media screen and (max-width: 1258px) {
+  .container,
+  .navbar-container {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 934px) {
+  .navigation {
+    display: none;
+  }
+  .nav-contact {
+    display: none !important;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  [data-aos] {
+    pointer-events: auto !important;
+  }
+
+  html:not(.no-js) [data-aos^="fade"][data-aos^="fade"] {
+    opacity: 1 !important;
+  }
+
+  html:not(.no-js) [data-aos="fade-up"] {
+    transform: none !important;
+  }
+} */

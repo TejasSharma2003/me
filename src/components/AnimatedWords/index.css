@@ -1,7 +1,7 @@
 
 .letters
 {
-    transform:translateX(35px);
+    transform:translateX(-18px);
     position: relative;
     z-index: 100;
 }
