@@ -117,7 +117,7 @@ function Contact() {
                     <li
                       className="box-name-email mar-down"
                       data-aos="fade-up"
-                      data-aos-delay="200"
+                      // data-aos-delay="100"
                     >
                       <li className="field" onFocus={handleFocus}>
                         <input
@@ -151,7 +151,7 @@ function Contact() {
                     <li
                       className="position-rel mar-down"
                       data-aos="fade-up"
-                      data-aos-delay="300"
+                      // data-aos-delay="300"
                       onFocus={handleFocus}
                     >
                       <input
@@ -170,7 +170,7 @@ function Contact() {
                     <li
                       className="position-rel mar-down"
                       data-aos="fade-up"
-                      data-aos-delay="400"
+                      // data-aos-delay="400"
                       onFocus={handleFocus}
                     >
                       <textarea
